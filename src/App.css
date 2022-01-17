@@ -1,0 +1,123 @@
+:root {
+  --off-white: #fafafa;
+}
+.nav {
+  background-color: var(--off-white);
+  font-family: monospace;
+  font-size: 18px;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  height: 80px;
+  z-index: 1000;
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
+}
+
+.nav-content:hover {
+  cursor: pointer;
+}
+
+.nav .nav-content {
+  max-width: 900px;
+  padding: 0rem 3rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-item {
+  display: inline;
+  margin-left: 2rem;
+  color: #333;
+}
+
+.nav-item:hover {
+  color: maroon;
+  cursor: pointer;
+}
+
+.section{
+  font-family: monospace;
+  font-size: 18px;
+
+}
+
+
+.section-dark {
+  background: #333;
+  color: white;
+}
+
+.section-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.home {
+  background: #fff;
+  padding-top: 10em;
+  padding-bottom: 25em;
+  display: flex;
+  justify-content: center;
+}
+
+.home h1 {
+  font-size: 6vh;
+  color: #333;
+  display: inline;
+  font-family: monospace;
+  overflow: hidden; 
+  border-right: .15em solid maroon; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 1100px }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: maroon }
+}
+
+.about-me img{
+  width: 50%;
+  height: 50%;
+  padding-right: 20px;
+}
+
+
+.projects a:link{
+  color: #000;
+}
+.projects a:visited{
+  color: maroon;
+}
+
+.resume a:link{
+  color: #fff;
+}
+.resume a:visited{
+  color: maroon;
+}
+.resume img{
+  width: 75%;
+  height: 75%;
+}
+
+.contact-info a:link{
+  color: #000;
+}
+.contact-info a:visited{
+  color: maroon;
+}
+
